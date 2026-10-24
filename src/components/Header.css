@@ -1,0 +1,258 @@
+
+/* Header */
+.header {
+  width: 100%;
+  min-height: 85px;
+  padding: 15px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 60, 130, 0.1);
+  position: relative;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Logo Section */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Logo Icon */
+
+.logo-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 10px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Logo Text */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  line-height: 1.05;
+}
+
+
+/* ASC Text */
+.ASC-text {
+  display: block;
+  font-size: 34px;
+  font-weight: 900;
+  color: #123b78;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* INFOVISION Text */
+.INFOVISION-text {
+  display: block;
+  font-size: 22px;
+  font-weight: 800;
+  color: #115a85;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+/* Tagline */
+.logo-text p {
+  margin: 6px 0 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333333;
+  white-space: nowrap;
+}
+
+/* Navigation */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #183153;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #2475ed;
+}
+
+/* Get Started Button */
+.header-nav .header-cta {
+  padding: 12px 22px;
+  background-color: #1769e0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-nav .header-cta:hover {
+  background-color: #104eaa;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  color: #123b78;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 768px) {
+  .header {
+    min-height: 75px;
+    padding: 10px 4%;
+  }
+
+  .header-logo {
+    gap: 8px;
+  }
+
+  .logo-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 23px;
+    border-radius: 9px;
+  }
+
+  .ASC-text {
+    font-size: 27px;
+  }
+
+  .INFOVISION-text {
+    font-size: 18px;
+    margin-top: 3px;
+  }
+
+  .logo-text p {
+    font-size: 9px;
+    margin-top: 4px;
+  }
+
+  .menu-toggle {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  /* Mobile Navigation Menu */
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 8px 15px rgba(0, 60, 130, 0.12);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    box-sizing: border-box;
+  }
+
+  .header-nav.active {
+    display: flex;
+  }
+
+  .header-nav a {
+    padding: 14px 10px;
+    border-bottom: 1px solid #e5edfa;
+    font-size: 15px;
+  }
+
+  .header-nav .header-cta {
+    margin-top: 12px;
+    padding: 13px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Extra Small Mobile Screens */
+@media (max-width: 360px) {
+  .header {
+    padding: 10px 3%;
+  }
+
+  .header-logo {
+    gap: 6px;
+  }
+
+  .logo-icon {
+    width: 34px;
+    height: 36px;
+    font-size: 19px;
+  }
+
+  .ASC-text {
+    font-size: 23px;
+  }
+
+  .INFOVISION-text {
+    font-size: 15px;
+  }
+
+  .logo-text p {
+    font-size: 8px;
+  }
+
+  .menu-toggle {
+    font-size: 24px;
+  }
+}
+
+.header .logo-text h2 .ASC-text {
+  color:#123b78 !important;
+  -webkit-text-fill-color: #123b78 !important;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.header .logo-text h2 .INFOVISION-text {
+  color: #115a85 !important;
+  -webkit-text-fill-color: #115a85 !important;
+  font-size: 22px;
+  font-weight: 800;
+}

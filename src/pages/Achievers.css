@@ -1,0 +1,416 @@
+/* Main Page */
+
+.achievers-page {
+  width: 100%;
+  padding: 45px 5% 60px;
+  background: #f5f9ff;
+  color: #123b78;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.achievers-page * {
+  box-sizing: border-box;
+}
+
+/* Heading */
+
+.achievers-heading {
+  max-width: 750px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.achievers-badge {
+  display: inline-block;
+  padding: 9px 17px;
+  background: #dcecff;
+  color: #1769e0;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.achievers-heading h1 {
+  margin: 18px 0 12px;
+  color: #123b78;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 800;
+}
+
+.achievers-heading h1 span {
+  color: #1769e0;
+}
+
+.achievers-heading p {
+  margin: 0;
+  color: #526784;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Slider */
+
+.achiever-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.achiever-card {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  width: 100%;
+  max-width: 900px;
+  min-width: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #d8e8ff;
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(18, 59, 120, 0.08);
+  animation: achieverFade 0.5s ease;
+}
+
+@keyframes achieverFade {
+  from {
+    opacity: 0.45;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Photo */
+
+.achiever-photo {
+  position: relative;
+  min-width: 0;
+  min-height: 430px;
+  background: #dcecff;
+}
+
+.achiever-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.success-label {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  padding: 11px 15px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1769e0;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(18, 59, 120, 0.12);
+}
+
+/* Student Details */
+
+.achiever-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 35px;
+  min-width: 0;
+}
+
+.student-tag {
+  color: #1769e0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.achiever-details h2 {
+  margin: 12px 0 6px;
+  color: #123b78;
+  font-size: 30px;
+  overflow-wrap: anywhere;
+}
+
+.student-qualification {
+  margin: 0 0 25px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* Company and Location */
+
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 14px;
+  border: 1px solid #e1edfc;
+  border-radius: 12px;
+  background: #f7faff;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  border-radius: 10px;
+  background: #e1edfc;
+  font-size: 21px;
+}
+
+.student-info small {
+  display: block;
+  margin-bottom: 5px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.student-info h3 {
+  margin: 0;
+  color: #123b78;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.achiever-message {
+  margin: 5px 0 22px;
+  color: #526784;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Button */
+
+.achiever-button {
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 9px;
+  background: #1769e0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.achiever-button:hover {
+  background: #104eaa;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Arrows */
+
+.slider-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #cfe2ff;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #1769e0;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background: #1769e0;
+  color: #ffffff;
+}
+
+/* Dots */
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0 45px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #b8d2f6;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slider-dot.active {
+  width: 28px;
+  border-radius: 10px;
+  background: #1769e0;
+}
+
+/* Bottom CTA */
+
+.achievers-bottom {
+  padding: 40px 20px;
+  border-radius: 18px;
+  background: #123b78;
+  color: #ffffff;
+  text-align: center;
+}
+
+.achievers-bottom h2 {
+  margin: 0 0 12px;
+  font-size: 28px;
+}
+
+.achievers-bottom p {
+  max-width: 600px;
+  margin: 0 auto 22px;
+  color: #dbeafe;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.achievers-bottom .achiever-button {
+  background: #ffffff;
+  color: #1769e0;
+}
+
+.achievers-bottom .achiever-button:hover {
+  background: #e3efff;
+}
+
+/* Tablet */
+
+@media (max-width: 850px) {
+  .achiever-slider {
+    gap: 10px;
+  }
+
+  .achiever-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .achiever-photo,
+  .achiever-photo img {
+    min-height: 400px;
+  }
+
+  .achiever-details {
+    padding: 24px;
+  }
+
+  .achiever-details h2 {
+    font-size: 25px;
+  }
+
+  .slider-arrow {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .achievers-page {
+    padding: 35px 5% 40px;
+  }
+
+  .achievers-heading {
+    margin-bottom: 25px;
+  }
+
+  .achievers-heading h1 {
+    font-size: 32px;
+  }
+
+  .achievers-heading p {
+    font-size: 14px;
+  }
+
+  .achiever-slider {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .achiever-card {
+    grid-template-columns: 1fr;
+  }
+
+  .achiever-photo,
+  .achiever-photo img {
+    min-height: 0;
+    height: 320px;
+  }
+
+  .achiever-details {
+    padding: 24px 20px;
+  }
+
+  .achiever-details h2 {
+    font-size: 25px;
+  }
+
+  .slider-arrow {
+    position: absolute;
+    top: 135px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    box-shadow: 0 3px 12px rgba(18, 59, 120, 0.15);
+  }
+
+  .slider-arrow:first-child {
+    left: 10px;
+  }
+
+  .slider-arrow:last-child {
+    right: 10px;
+  }
+
+  .achievers-bottom {
+    padding: 30px 18px;
+  }
+
+  .achievers-bottom h2 {
+    font-size: 23px;
+  }
+
+  .achievers-bottom p {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .achiever-card {
+    animation: none;
+  }
+
+  .achiever-button,
+  .slider-arrow,
+  .slider-dot {
+    transition: none;
+  }
+}

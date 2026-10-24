@@ -1,0 +1,483 @@
+/* Main Page */
+
+.home-page {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  color: #123b78;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.home-page * {
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 55px 5.2%;
+  background: linear-gradient(120deg, #f0f7ff, #dceeff);
+  min-height: 520px;
+}
+
+/* Hero Content */
+
+.hero-content {
+  flex: 1.2;
+  min-width: 0;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background: #d8eaff;
+  color: #1769e0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-content h1 {
+  margin: 0 0 20px;
+  color: #102c55;
+  font-size: clamp(34px, 4vw, 58px);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: #1769e0;
+}
+
+.hero-description {
+  max-width: 580px;
+  color: #425777;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+/* Benefits */
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  margin-bottom: 30px;
+}
+
+.benefits span {
+  color: #123b78;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Contact Buttons */
+
+.hero-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  min-height: 72px;
+  border: 1px solid #a8ceff;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #1769e0;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(23, 105, 224, 0.12);
+}
+
+.contact-button span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-button strong {
+  font-size: 14px;
+  color: #123b78;
+}
+
+.contact-button small {
+  font-size: 12px;
+  color: #526784;
+}
+
+.call-button {
+  background: #1769e0;
+  border-color: #1769e0;
+}
+
+.call-button strong,
+.call-button small {
+  color: #ffffff;
+}
+
+/* Hero Image */
+
+.hero-image {
+  flex: 0.9;
+  min-width: 0;
+  position: relative;
+  text-align: center;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  height: 420px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 28px;
+  box-shadow: 0 15px 35px rgba(18, 59, 120, 0.12);
+}
+
+.image-message {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  padding: 15px 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(18, 59, 120, 0.12);
+}
+
+.image-message h3 {
+  margin: 0 0 5px;
+  color: #1769e0;
+  font-size: 17px;
+}
+
+.image-message p {
+  margin: 0;
+  font-size: 13px;
+  color: #526784;
+}
+
+/* Contact Cards */
+
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  padding: 45px 5.5%;
+  background: #ffffff;
+}
+
+.contact-card {
+  position: relative;
+  padding: 25px;
+  border: 1px solid #d7e8ff;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(18, 59, 120, 0.04);
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(18, 59, 120, 0.09);
+}
+
+.contact-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background: #e3f0ff;
+  color: #1769e0;
+  font-size: 25px;
+}
+
+.contact-card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #123b78;
+}
+
+.contact-card p {
+  margin: 0 0 15px;
+  color: #526784;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contact-card a {
+  color: #1769e0;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-card a:hover {
+  color: #104eaa;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .hero-section {
+    padding: 45px 4%;
+    gap: 24px;
+  }
+
+  .hero-contact {
+    gap: 10px;
+  }
+
+  .contact-button {
+    padding: 12px;
+  }
+
+  .hero-image img {
+    height: 360px;
+  }
+
+  .contact-section {
+    gap: 15px;
+    padding: 35px 4%;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 35px 5%;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .benefits {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-button {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 480px;
+    height: 350px;
+  }
+
+  .image-message {
+    right: 10px;
+    bottom: 12px;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 30px 5%;
+  }
+
+  .contact-card {
+    padding: 22px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 380px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+  }
+
+  .hero-image img {
+    height: 280px;
+  }
+
+  .image-message {
+    padding: 10px;
+  }
+
+  .image-message h3 {
+    font-size: 14px;
+  }
+}
+/* Candidate Registration */
+
+.registration-section {
+  padding: 55px 5%;
+  background: #f0f7ff;
+}
+
+.registration-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.registration-heading > span {
+  color: #1769e0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.registration-heading h2 {
+  color: #123b78;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.registration-heading p {
+  color: #526784;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.registration-form {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  background: #ffffff;
+  border: 1px solid #d7e8ff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(18, 59, 120, 0.07);
+}
+
+.registration-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.registration-form label {
+  color: #123b78;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #cbdcf2;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #183153;
+  font-size: 14px;
+  outline: none;
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+  border-color: #1769e0;
+  box-shadow: 0 0 0 3px rgba(23, 105, 224, 0.1);
+}
+
+.whatsapp-submit {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-height: 52px;
+  border: none;
+  border-radius: 10px;
+  background: #1769e0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-submit:hover {
+  background: #104eaa;
+  transform: translateY(-2px);
+}
+
+.form-note {
+  grid-column: 1 / -1;
+  margin: -10px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Responsive Form */
+
+@media (max-width: 600px) {
+  .registration-section {
+    padding: 35px 5%;
+  }
+
+  .registration-heading h2 {
+    font-size: 26px;
+  }
+
+  .registration-heading p {
+    font-size: 14px;
+  }
+
+  .registration-form {
+    grid-template-columns: 1fr;
+    padding: 22px 18px;
+    gap: 18px;
+  }
+
+  .whatsapp-submit,
+  .form-note {
+    grid-column: 1;
+  }
+}
